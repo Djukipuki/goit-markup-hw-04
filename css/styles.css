@@ -127,20 +127,22 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.social-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     background-color: var(--iris);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-item:focus,
-.social-item:hover {
+.social-link:focus,
+.social-link:hover {
     background-color: var(--ocean);
-}
-
-.social-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .social-icon {
@@ -173,6 +175,7 @@ main {
     padding: 24px 0;
     position: relative;
     display: block;
+    color: var(--ocean);
 }
 
 .navigation-item::after {
@@ -337,7 +340,7 @@ main {
     border-radius: 4px;
     border: 1px solid var(--light-slate);
     color: var(--light-slate);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .customer-icon {
@@ -347,6 +350,7 @@ main {
 .customer-link:hover,
 .customer-link:focus{
     border-color: var(--ocean);
+    color: var(--ocean);
 }
 
 .filter-btn {
@@ -478,11 +482,10 @@ main {
 
 .social-list-footer {
     gap: 16px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-item-footer:hover,
-.social-item-footer:focus {
+.social-link-footer:hover,
+.social-link-footer:focus {
     background-color: var(--green);
 }
 
