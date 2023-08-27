@@ -174,10 +174,14 @@ main {
     padding: 24px 0;
     position: relative;
     display: block;
+    color: var(--navy-blue);
+}
+
+.navigation-active-item {
     color: var(--ocean);
 }
 
-.navigation-item::after {
+.navigation-active-item::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -186,13 +190,6 @@ main {
     left: 0;
     background-color: var(--ocean);
     border-radius: 2px;
-    opacity: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.navigation-item:focus::after,
-.navigation-item:hover::after {
-    opacity: 1;
 }
 
 .logo {
@@ -297,7 +294,6 @@ main {
 }
 
 .team {
-    height: 732px;
     padding: 120px 0;
     background-color: var(--cloud);
 }
